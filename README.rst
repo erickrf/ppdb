@@ -51,6 +51,15 @@ TransformationDict after it is created, so the next time it can be loaded much
 faster. If you pass a path ending in ``.pickle``, ``ppdb.load_ppdb()`` will just
 load it and ignore the filtering logic.
 
+If you want to use the existing Portuguese filters, import ``ppdb_pt``:
+::
+
+    from ppdb import ppdb_pt
+    ppdb_rules = ppdb.load_ppdb(path)
+    
+And if you happen to write filter functions for another language, please submit 
+a pull request!
+
 Singleton Usage
 ---------------
 
